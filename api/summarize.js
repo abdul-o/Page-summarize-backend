@@ -44,6 +44,7 @@ ${trimmedText}
     )
 
     const data = await response.json()
+    console.log("FULL GEMINI RESPONSE:", data)
 
     const summary =
       data?.candidates?.[0]?.content?.parts?.[0]?.text ||
