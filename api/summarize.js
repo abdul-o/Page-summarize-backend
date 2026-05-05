@@ -11,7 +11,7 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'No text provided' })
     }
 
-    // ✅ Trim text (important for API stability)
+    //  Trim text (important for API stability)
     const trimmedText = text.slice(0, 3000)
 
     const response = await fetch(
